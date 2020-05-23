@@ -3,8 +3,8 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: wordpress-mysql
-  name: wordpress-mysql
+    app: hk-mysql
+  name: hk-mysql
 spec:
   ports:
   - name: 3306-3306
