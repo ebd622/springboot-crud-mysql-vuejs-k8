@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: 2020-05-24T13:21:21Z
+  labels:
+    app: ui-vuejs
+  name: ui-vuejs
+  namespace: default
+  resourceVersion: "4100"
+  selfLink: /api/v1/namespaces/default/services/ui-vuejs
+  uid: 75d98898-9dc1-11ea-8880-0242ac11001a
+spec:
+  clusterIP: 10.106.12.214
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 32097
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: ui-vuejs
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}

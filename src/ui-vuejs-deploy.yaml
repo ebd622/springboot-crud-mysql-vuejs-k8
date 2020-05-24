@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: ui-vuejs
+  name: ui-vuejs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ui-vuejs
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ui-vuejs
+    spec:
+      containers:
+      - args:
+        - mvn
+        - clean
+        - spring-boot:run
+        image: ebd622/ui-vuejs-k8:0.0.1
+        name: ui-vuejs-k8
+        resources: {}
+status: {}
