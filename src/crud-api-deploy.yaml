@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: crud-api
+  name: crud-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crud-api
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: crud-api
+    spec:
+      containers:
+      - args:
+        - mvn
+        - clean
+        - spring-boot:run
+        image: ebd622/crud-api-k8:0.0.2
+        name: crud-api-k8
+        resources: {}
+status: {}
