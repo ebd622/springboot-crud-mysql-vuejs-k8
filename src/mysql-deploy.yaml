@@ -47,8 +47,9 @@ spec:
 
       volumes:
       - name: mysql-persistent-storage
-        persistentVolumeClaim:
-          claimName: mysql-persistent-storage
+        emptyDir: {}
 
+        #persistentVolumeClaim:
+          #claimName: mysql-persistent-storage
 
 status: {}
