@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+  name: ingress-ui-api
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: ui-vuejs
+          servicePort: 80
+        path: /
+      - backend:
+          serviceName: crud-api
+          servicePort: 80
+        path: /crud
