@@ -22,7 +22,7 @@ spec:
         - mvn
         - clean
         - spring-boot:run
-        image: ebd622/ui-vuejs-k8:0.0.1
+        image: ebd622/ui-vuejs-k8:0.0.2
         name: ui-vuejs-k8
         resources: {}
 status: {}
