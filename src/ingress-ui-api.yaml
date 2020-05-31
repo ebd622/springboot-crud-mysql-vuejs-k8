@@ -16,4 +16,4 @@ spec:
       - backend:
           serviceName: crud-api
           servicePort: 80
-        path: /crud
+        path: /api
