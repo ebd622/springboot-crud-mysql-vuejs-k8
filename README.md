@@ -1,2 +1,2 @@
 # springboot-crud-mysql-vuejs-k8
-![GitHub Logo](/img/k8_crud_diagram.swg)
+![GitHub Logo](/img/k8_crud_diagram.svg)
