@@ -10,7 +10,7 @@ The architecturl design is shown below:
 **Prerequisites**: An [ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers) must be deployed in a cluster, otherwise an Ingress resource has no effect. For example, [Nginx ingress controller](https://docs.nginx.com/nginx-ingress-controller/installation/) can be deployed.
 
 ## Deploy the application
-The fastest way to deploy the application is to run kubestl create command in the src folder:
+The fastest way to deploy the application is to run kubestl **create** command in the src folder:
 
 ```
 git clone https://github.com/ebd622/springboot-crud-mysql-vuejs-k8.git
@@ -27,8 +27,16 @@ http(s)://your_k8_cluster/
 For better understanfing let's deploy the application step-by-step.
 
 1. Deploy Ingress resources
+```
+kubectl create -f crud-api-deploy.yaml
+```
+This will create ingress rules for the application.
+
 
 2. Deploy Secret
+```
+kubectl create -f secret.yaml
+```
 
 3. Deploy ConfigMap
 
