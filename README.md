@@ -23,6 +23,24 @@ This will deploy all requered kubernetes componenets to your cluster. Wait for a
 http(s)://your_k8_cluster/
 ```
 
+## Step-by-step deployment
+For better understanfing let's deploy the application step-by-step.
 
+1. Deploy Ingress resources
 
+2. Deploy Secret
+
+3. Deploy ConfigMap
+
+4. Deploy MySQL
+
+5. Deploy a service for MySQL
+
+6. Deploy crud-api
+
+7. Deploy a service for crud-api
+
+8. Deploy ui-vuejs
+
+9. Deploy a service for ui-vuejs
 
