@@ -26,14 +26,14 @@ http(s)://your_k8_cluster/
 ## Step-by-step deployment
 For better understanfing let's deploy the application step-by-step.
 
-1. Deploy Ingress resources
+**1.** Deploy Ingress resources
 ```
 kubectl create -f crud-api-deploy.yaml
 ```
 This will create ingress rules for the application.
 
 
-2. Deploy Secret
+**2. Deploy Secret**
 ```
 kubectl create -f secret.yaml
 ```
@@ -43,7 +43,19 @@ The created secret contains key/value pairs to acceess MySQL DB. The value are m
   host: aGstbXlzcWw=
   password: aGVsbG9rb2Rpbmc=
 ```
-The values are 
+Secet values must be specified in a hashed format. To decode hash run the command:
+
+```
+echo –n ‘dGVzdA==’ | base64 --decode
+```
+To convert into hash:
+```
+echo –n ‘my_password’ | base64
+```
+It is also possible to create a secret in imperative way:
+```
+TODO:
+```
 
 
 
