@@ -37,6 +37,15 @@ This will create ingress rules for the application.
 ```
 kubectl create -f secret.yaml
 ```
+The created secret contains key/value pairs to acceess MySQL DB. The value are mapped to env-variables in the MySQL-container anf crud-api container. Three pairs are configured there:
+``` javascript
+  dbname: dGVzdA==
+  host: aGstbXlzcWw=
+  password: aGVsbG9rb2Rpbmc=
+```
+The values are 
+
+
 
 3. Deploy ConfigMap
 ```
