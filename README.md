@@ -26,7 +26,7 @@ http(s)://your_k8_cluster/
 ## Step-by-step deployment
 For better understanfing let's deploy the application step-by-step.
 
-**1.** Deploy Ingress resources
+**1. Deploy Ingress resources**
 ```
 kubectl create -f crud-api-deploy.yaml
 ```
@@ -59,39 +59,39 @@ TODO:
 
 
 
-3. Deploy ConfigMap
+**3. Deploy ConfigMap**
 ```
 kubectl create -f mysql-cm.yaml
 ```
 
-4. Deploy MySQL
+**4. Deploy MySQL**
 ```
 kubectl create -f mysql-deploy.yaml
 ```
 
-5. Deploy a service for MySQL
+**5. Deploy a service for MySQL**
 ```
 kubectl create -f svc-mysql.yaml
 ```
 
-6. Deploy crud-api
+**6. Deploy crud-api**
 ```
 kubectl create -f crud-api-deploy.yaml
 ```
 
-7. Deploy a service for crud-api
+**7. Deploy a service for crud-api**
 ```
 kubectl create -f svc-crud-api.yaml
 ```
 
 
-8. Deploy ui-vuejs
+**8. Deploy ui-vuejs**
 ```
 kubectl create -f ui-vuejs-deploy.yaml
 ```
 
 
-9. Deploy a service for ui-vuejs
+**9. Deploy a service for ui-vuejs**
 ```
 kubectl create -f svc-ui-vuejs.yaml
 ```
