@@ -83,14 +83,14 @@ kubectl create -f crud-api-deploy.yaml
 ```
 kubectl create -f svc-crud-api.yaml
 ```
-The image [crud-api-k8](https://github.com/ebd622/crud-api-k8) is used for deployment.
+This will create a deployment with the image [crud-api-k8](https://github.com/ebd622/crud-api-k8).
 
 
 **8. Deploy ui-vuejs**
 ```
 kubectl create -f ui-vuejs-deploy.yaml
 ```
-The image [ui-vuejs-k8](https://github.com/ebd622/ui-vuejs-k8) is used for deployment.
+This will create a deployment with the image [ui-vuejs-k8](https://github.com/ebd622/ui-vuejs-k8).
 
 
 **9. Deploy a service for ui-vuejs**
