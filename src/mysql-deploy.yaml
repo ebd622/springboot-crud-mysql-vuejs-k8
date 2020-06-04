@@ -41,8 +41,8 @@ spec:
 
           - name: MYSQL_ROOT_HOST
             valueFrom:
-              secretKeyRef:
-                name: mysql-conf
+              configMapKeyRef:
+                name: mysql-config
                 key: roothost
 
       volumes:
