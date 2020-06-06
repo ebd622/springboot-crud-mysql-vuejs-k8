@@ -54,7 +54,7 @@ echo –n ‘my_password’ | base64
 ```
 It is also possible to create a secret in imperative way:
 ```
-TODO:
+kubectl create secret generic mysql-conf --from-literal=password=hellokoding --from-literal=host=hk-mysql --from-literal=dbname=test
 ```
 
 
