@@ -28,7 +28,7 @@ For better understanfing let's deploy the application step-by-step.
 
 **1. Deploy Ingress resources**
 ```
-kubectl create -f crud-api-deploy.yaml
+kubectl create -f ingress-ui-api.yaml
 ```
 This will create ingress rules for the application.
 
