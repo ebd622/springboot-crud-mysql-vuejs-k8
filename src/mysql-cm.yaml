@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  roothost: '%'
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: mysql-config
