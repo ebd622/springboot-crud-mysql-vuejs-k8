@@ -98,4 +98,6 @@ This will create a deployment with the image [ui-vuejs-k8](https://github.com/eb
 kubectl create -f svc-ui-vuejs.yaml
 ```
 
+## Deploy with Helm
+It is also possible to deploy the application with Helm, a Chart and instructuons are specified in [springboot-crud-mysql-vuejs-helm](https://github.com/ebd622/springboot-crud-mysql-vuejs-helm)
 
